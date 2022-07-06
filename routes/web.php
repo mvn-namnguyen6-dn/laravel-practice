@@ -25,3 +25,9 @@ Route::get('/listuser','UserController@index');
 Route::get('/users/{user}','UserController@show');
 Route::get('/redirect','UserController@redirectRoute');
 
+Route::get('/showuser','UserController@index');
+Route::get('/adduser','UserController@create');
+Route::post('saveuser','UserController@store');
+Route::get('edituser/{id}','UserController@edit');
+Route::post('updateuser','UserController@update');
+Route::get('deleteuser/{id}','UserController@destroy');
